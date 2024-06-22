@@ -23,7 +23,7 @@ return {
         -- "lua-language-server",
         -- "stylua",
         -- "html-lsp",
-        -- "css-lsp",
+        "css-lsp",
         "prettier",
         "typescript-language-server",
         "tailwindcss-language-server",
@@ -40,7 +40,7 @@ return {
         -- "lua",
         -- "vimdoc",
         -- "html",
-        -- "css",
+        "css",
         "typescript",
         "javascript",
         "tsx"
