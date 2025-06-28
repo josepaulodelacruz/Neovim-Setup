@@ -31,7 +31,16 @@ return {
         "prettier",
         "typescript-language-server",
         "tailwindcss-language-server",
-        "eslint-lsp"
+        "eslint-lsp",
+        "intelephense",
+
+        -- Formatters
+        "php-cs-fixer",
+        "blade-formatter",
+
+          -- Linters
+        "phpstan",
+        "eslint_d",
       },
     },
   },
@@ -47,7 +56,8 @@ return {
         "css",
         "typescript",
         "javascript",
-        "tsx"
+        "tsx",
+        "php"
       },
     },
   },
