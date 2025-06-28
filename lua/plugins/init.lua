@@ -13,16 +13,61 @@ return {
     end,
   },
 
-  -- test new blink
-  -- { import = "nvchad.blink.lazyspec" },
+  { import = "nvchad.blink.lazyspec" },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        -- "lua-language-server",
+        -- "stylua",
+        -- "html-lsp",
+        "css-lsp",
+        "prettier",
+        "typescript-language-server",
+        "tailwindcss-language-server",
+        "eslint-lsp",
+        "intelephense",
+
+        -- Formatters
+        "php-cs-fixer",
+        "blade-formatter",
+
+          -- Linters
+        "phpstan",
+        "eslint_d",
+      },
+    },
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        -- "vim",
+        -- "lua",
+        -- "vimdoc",
+        -- "html",
+        "css",
+        "typescript",
+        "javascript",
+        "tsx",
+        "php",
+        "blade",
+        "yaml",
+      },
+    },
+  },
+
+  {
+    "windwp/nvim-ts-autotag",
+    ft = {
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+    },
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
 }
