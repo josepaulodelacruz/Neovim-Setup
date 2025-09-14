@@ -33,7 +33,7 @@ return {
         "php-cs-fixer",
         "blade-formatter",
 
-          -- Linters
+        -- Linters
         "phpstan",
         "eslint_d",
       },
@@ -68,6 +68,14 @@ return {
     },
     config = function()
       require("nvim-ts-autotag").setup()
+    end,
+  },
+  {
+    "sphamba/smear-cursor.nvim",
+    config = function()
+      require("smear_cursor").setup({
+        -- optional settings, defaults work fine
+      })
     end,
   },
 }
