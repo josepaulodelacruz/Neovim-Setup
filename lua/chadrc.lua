@@ -5,8 +5,9 @@
 local M = {}
 
 M.ui = {
-	theme = "doomchad",
-  transparency = true,
+  theme = "onedark",  -- 🔧 Make sure this matches an actual theme file in base46
+  theme_toggle = { "onedark", "tokyonight" },
+  transparency = false,
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
