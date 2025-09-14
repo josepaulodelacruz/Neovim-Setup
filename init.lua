@@ -35,7 +35,7 @@ end
 if vim.g.neovide then
   vim.g.neovide_antialiasing = true
   vim.g.neovide_clear_type = true
-  --vim.g.neovide_cursor_vfx_mode = "railgun"
+  vim.g.neovide_cursor_vfx_mode = "railgun"
   vim.g.neovide_cursor_vfx_opacity = 250
   vim.g.neovide_cursor_vfx_particle_density = 10.0
   vim.g.neovide_cursor_vfx_particle_lifetime = 0.8
@@ -54,10 +54,11 @@ if vim.g.neovide then
   end
 
   local function toggle_fullscreen()
-    vim.g.neovide_fullscreen = not vim.g.neovide_fullscreen
+    -- vim.g.neovide_fullscreen = not vim.g.neovide_fullscreen
+    vim.g.neovide_fullscreen = false
   end
 
-  vim.keymap.set("n", "<F11>", toggle_fullscreen, { silent = false })
+  vim.keymap.set("n", "<F11>", toggle_fullscreen, { silent = true })
   vim.keymap.set("n", "<F10>", toggle_transparency, { silent = true })
 end
 
